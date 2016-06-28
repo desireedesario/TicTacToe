@@ -1,3 +1,31 @@
-h1 {
-  color: red;
+
+/*the game board itself needs size and to be centered*/
+#board {
+  width: 602px;
+  margin: 0 auto; /*this centers the game board*/
+}
+
+/*each tile in the rows*/
+.tile {
+  width: 200px;
+  height: 200px;
+  /*border: 1px solid black; dont do this because it does not look like a ttt board that way*/
+  float: left;
+  /*these are the css stylings to style your x and o! */
+  font-size: 10em;
+  text-align: center;
+}
+
+/*this is creating the lines that give the board a ttt like look*/
+#row1 .tile {
+  border-bottom: 1px solid black;
+}
+
+#row3 .tile {
+  border-top: 1px solid black;
+}
+
+#cell1, #cell4, #cell7 {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }

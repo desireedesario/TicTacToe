@@ -3,10 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>Tic Tac Toe</title>
+
+  <!-- css styling sheets -->
   <link rel="stylesheet" href="css/styles.css"></li>
-  <script src="js/scripts.js"></script>
+  <!-- normalize.css is a link that allows your webpage to look the same in all browsers -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  
 </head>
 <body>
 
+  <!-- render the board. give it thirteen divs -->
+  <!-- eah div is wrapped in a row, and each row is wrapped in a board -->
+  <div id="board">
+    <!-- changed each row into IDs so that we could style out ttt board -->
+    <div id="row1">
+      <div class="tile" id="cell0"></div>
+      <div class="tile" id="cell1"></div>
+      <div class="tile" id="cell2"></div>
+    </div>
+    <div id="row2">
+      <div class="tile" id="cell3"></div>
+      <div class="tile" id="cell4"></div>
+      <div class="tile" id="cell5"></div>
+    </div>
+    <div id="row3">
+      <div class="tile" id="cell6"></div>
+      <div class="tile" id="cell7"></div>
+      <div class="tile" id="cell8"></div>
+    </div>
+  </div>
+<!-- JavaScript files (make sure they are in the body tag) are placed in the bottom so that the JS can read the DOM first AND THEN manipulate it -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>
